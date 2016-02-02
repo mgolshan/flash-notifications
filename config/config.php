@@ -27,5 +27,9 @@ return [
      */
 
     'show_confirmation_button' => false,
-
+    
+    /**
+     * If set true, message can be in HTML format.
+     */
+    'html_format' => true,
 ];
