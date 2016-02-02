@@ -10,8 +10,8 @@
 <script>
 swal({
     title: "{{session('flashalert.title')}}",
-    text: "{{session('flashalert.message')}}",
-    type: "{{session('flashalert.level')}}",
+    text: "{!! addslashes(session('flashalert.message')) !!}",
+    html: {{config('flashalert.html_format')}},type: "{{session('flashalert.level')}}",
     timer: "{{config('flashalert.hide_timer')}}",
     showConfirmButton: "{{config('flashalert.show_confirmation_button')}}"
 });
